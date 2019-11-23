@@ -1,0 +1,637 @@
+/*
+ Theme Name:   McCoy Sales
+ Theme URI:
+ Description:  Child Theme for McCoy Sales
+ Author:       Patrick Hangauer
+ Author URI:   http://patrickhangauer.com
+ Template:     twentynineteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:
+ Text Domain:  mccoysaleschild
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}body{line-height:1}button{outline:0}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}q{display:inline;font-style:italic}q:before{content:'"';font-style:normal}q:after{content:'"';font-style:normal}textarea,input[type="text"],input[type="button"],input[type="submit"],input[type="reset"],input[type="search"],input[type="password"]{-webkit-appearance:none;appearance:none;border-radius:0}table{border-collapse:collapse;border-spacing:0}th,td{padding:2px}big{font-size:120%}small,sup,sub{font-size:80%}sup{vertical-align:super}sub{vertical-align:sub}dd{margin-left:20px}kbd,tt{font-family:courier;font-size:12px}ins{text-decoration:underline}del,strike,s{text-decoration:line-through}dt{font-weight:bold}address,cite,var{font-style:italic}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+.sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}.screen-reader-text{clip:rect(1px, 1px, 1px, 1px);position:absolute !important}
+
+/* Colors
+ *
+ * Green: #0C6738
+ *
+ */
+
+ /* wp-overrides */
+ @media screen and (max-width: 570px) {
+   .wp-block-image .alignright {
+     float: none;
+     margin: auto;
+   }
+ }
+
+
+/* Text Styles */
+strong {
+  font-weight: bold;
+}
+
+h1 {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 1.5;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.3;
+  margin: 15px 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+a {
+  color: #000;
+}
+
+/* Page Title */
+.entry-title {
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 2;
+  margin-top: 3em;
+  font-weight: bold;
+  font-family: 'Noto Sans', sans-serif;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.news-post-title {
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-top: 3.5em;
+  font-weight: bold;
+  font-family: 'Noto Sans', sans-serif;
+  margin-bottom: 0;
+}
+
+.news-post-title a {
+  text-decoration: none;
+}
+
+.mc--main-img {
+  border: 10px solid #0C6738;
+  max-width: 800px;
+  margin: 2em auto 3em;
+  padding: 8px;
+}
+
+.mc--h3 {
+  font-size: 24px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2;
+  margin-top: 2em;
+}
+
+.mc--commitment {
+  line-height: 1.5;
+  font-size: 18px;
+  font-style: italic;
+  padding-bottom: 3em;
+}
+
+
+.content-area {
+  /* background-color: lightgray; */
+  /* padding-top: 100px; */
+  border-top: 60px solid #0C6738;
+}
+
+/* Article */
+article {
+  width: 94%;
+  margin: auto;
+  max-width: 1200px;
+}
+
+
+/* Header */
+
+.main-header {
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+}
+
+.eyebrow {
+    background-color: #0C6738;
+    text-align: right;
+    padding: 10px 20px;
+    font-family: 'Noto Sans', sans-serif;;
+}
+.eyebrow a {
+  color: #fff;
+}
+
+.page-template-archive-manufacturer .topnav.hidden {
+    display: none;
+}
+
+.topnav.hidden {
+  top: -160px;
+  display: none;
+}
+.topnav.showing {
+  top: 0;
+  display: block;
+}
+
+.topnav {
+  position: fixed;
+  width: 100%;
+  /* top: -160px; */
+  background-color: #fff;
+  box-shadow: 2px 2px 10px rgba(0,0,0,.3);
+  /* display: none; */
+  transition: top .75s;
+
+}
+
+
+
+.topnav a {
+  text-decoration: none;
+  font-size: 22px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.homeLogo {
+  margin: 0;
+  flex: 0 0 auto;
+}
+.homelogo img {
+  max-width: 100%;
+}
+.logo-title {
+  flex: 0 0 auto;
+}
+.logo-img {
+  padding: 5px;
+  width: 145px;
+}
+h2.homeLogo {
+  font-size: 1em;
+}
+
+/* Nav */
+.desktopNav {
+  display: none;
+  justify-content: space-between;
+}
+.menu-main-menu-container {
+    flex: 1 1 100%;
+}
+.desktopNav ul {
+  display: flex;
+  align-self: flex-end;
+  flex: 1 0 auto;
+  justify-content: space-between;
+  padding-left: 4em;
+  margin-bottom: 0;
+}
+
+.desktopNav ul li {
+  list-style-type: none;
+  padding-bottom: 1em;
+}
+
+.desktopNav li ul {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding-left: 0;
+  margin-top: 1em;
+  margin-left: -15px;
+}
+
+.desktopNav li ul a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+li:hover > ul {
+  display: block;
+}
+
+
+
+.mobileNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  box-shadow: 2px 2px 10px rgba(0,0,0,.3);
+}
+.mobileNav a.icon {
+  font-size: 23px;
+}
+
+
+
+.toggleNav {
+  display: none;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  top: 98px;
+  padding-top: 1em;
+  z-index: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.toggleNav ul {
+  padding: 0;
+}
+
+
+.toggleNav li {
+  list-style-type: none;
+  margin: 20px;
+}
+
+.toggleNav li ul {
+  display: none;
+}
+
+.toggleNav.active {
+  display: inline-block;
+}
+.topnav.scrolled {
+    display: none;
+}
+
+/* dropdown menu */
+.hamburger-menu {
+  padding: 5px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/* Navbar */
+
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 4px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-7px, 5px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Hero Styles */
+.hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+		display: flex;
+		align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+}
+
+.hero-title {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 26px;
+  color: #fff;
+  background-color: rgba(0,0,0,.4);
+  padding:30px;
+  text-align: center;
+  width: 90%;
+  line-height: 1.4;
+}
+
+.hero-title-mobile {
+  font-family: $serif1;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+/* Manufacturers */
+
+.manu-logos {
+    /* columns: 3; */
+    margin: 30px auto 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.manu-logo {
+  max-width: 90px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+.manu-logo img {
+  width: 100%;
+}
+
+.single-manufacturer {
+  /* margin-top: 130px; */
+  position: relative;
+  padding-top: 230px;
+  border-bottom: 1px solid #0C6738;
+}
+
+.up-arrow {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    z-index: 1;
+    text-align: center;
+}
+
+.up-arrow a {
+    text-decoration: none;
+    color: green;
+    font-size: 14px;
+}
+
+.company-logo-container {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    box-shadow: 4px 5px 11px rgba(0,0,0,.4);
+    z-index: 2;
+}
+
+.company-logo-container:hover {
+    box-shadow: 2px 3px 5px rgba(0,0,0,.4);
+}
+
+.company-logo {
+  max-width: 200px;
+  height: auto;
+  flex: 0 0 100%;
+  padding: 8px;
+}
+
+.compay-link {
+    line-height: 2;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Noto Sans', sans-serif;
+    color: #0C6738;
+}
+
+.manufacturer-content {
+  background-color: lightgray;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.mccoy-storefront img {
+    margin-right: 1em;
+    border: 5px solid #0C6738;
+    padding: 10px;
+    box-shadow: 3px 4px 11px;
+}
+
+.mc--address {
+    margin: 5px 0;
+}
+
+.contact-columns {
+  flex-direction: row-reverse;
+}
+
+.contact-map {
+  width: 90%;
+  height: 320px;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Footer */
+
+footer {
+  background-color: #0C6738;
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+.site-info {
+  color: #fff;
+  width: 95%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-address {
+  font-size: 18px;
+  line-height: 1.3;
+  font-family: 'Noto Sans', sans-serif;
+  /* text-align: center; */
+}
+
+.footer-navigation {
+  align-self: flex-end;
+}
+
+.footer-menu {
+  margin-top: 20px;
+}
+
+.footer-menu li {
+  padding: 10px 0;
+}
+
+.footer-menu a {
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.copyright {
+  text-align: center;
+  color: white;
+  margin-top: 2em;
+}
+
+@media screen and (min-width: 570px) {
+  .manu-logos {
+      width: 90%;
+      margin: auto;
+      padding: 20px 0;
+  }
+  .manu-logo {
+    max-width: 150px;
+    margin: 25px;
+  }
+  .mccoy-storefront img {
+    border: 10px solid #0C6738;
+  }
+  .contact-map {
+    width: 100%;
+    height: 450px;
+  }
+}
+
+
+@media screen and (min-width: 960px ) {
+  .homeLogo {
+    max-width: 13em;
+  }
+  h2.homeLogo {
+    font-size: 2em;
+  }
+  .logo-img {
+    width: 300px;
+  }
+  .main-header {
+    /* height: 160px; */
+  }
+  .desktopNav {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .mobileNav {
+    display: none;
+  }
+  .hero-title {
+    font-size: 3em;
+  }
+  .entry-title {
+      /* text-align: center; */
+      font-size: 40px;
+  }
+  .archive-entry-content {
+    border-left: 5px solid #0C6738;
+    margin-left: 30px;
+    padding-left: 30px;
+  }
+  .company-logo-container {
+      top: 40px;
+      left: 25px;
+    }
+  .company-title-container {
+    /* position: absolute;
+    top: -72px;
+    left: 50px; */
+  }
+  .mc--company-title {
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  .company-link {
+
+  }
+  .mc--h3 {
+    font-size: 40px;
+    margin-top: 100px;
+  }
+  .content-area {
+    padding-top: 50px;
+  }
+  .manu-logos {
+      width: 80%;
+      padding: 40px 0;
+      max-width: 1200px;
+  }
+  .mc--commitment {
+    line-height: 1.5;
+    font-size: 24px;
+    border-left: 10px solid #0C6738;
+    width: 97%;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 30px auto 30px 40px;
+  }
+  .site-info {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .aimr-logo {
+    flex: 0 0 33%;
+}
+  .footer-address {
+    flex: 0 0 33%;
+  }
+  .footer-navigation {
+    align-self: flex-start;
+    flex: 0 0 33%;
+  }
+  .footer-menu {
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* text-align: right; */
+  }
+}
