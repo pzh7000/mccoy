@@ -35,7 +35,7 @@
 						<nav class="desktopNav" role="navigation">
 							<div class="logo-title site-branding">
                 <a class="logo h1" href="<?php echo home_url(); ?>">
-                  <img class="logo-img" src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/2019/10/Mccoy-logo.jpg" alt="McCoy Sales Kansas City" class="">
+                  <img class="logo-img" src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/2019/11/Mccoy-logo.jpg" alt="McCoy Sales Kansas City" class="">
                 </a>
                 <?php
                 $description = get_bloginfo( 'description', 'display' );
