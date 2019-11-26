@@ -26,7 +26,11 @@
 			<header class="main-header">
 
 				<div class="topnav" id="topNav">
-					<div class="eyebrow"><a href="tel:1-913-342-4904">913-342-4904</a></div>
+					<div class="eyebrow">
+						<div class="eyebrow-content">
+							<a href="tel:1-913-342-4904">913-342-4904</a>
+						</div>
+					</div>
 					<div class="container">
 						<nav class="desktopNav" role="navigation">
 							<div class="logo-title site-branding">

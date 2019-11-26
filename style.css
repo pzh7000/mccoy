@@ -104,14 +104,14 @@ a {
   line-height: 1.5;
   font-size: 18px;
   font-style: italic;
-  padding-bottom: 3em;
+  padding: 0 20px;
 }
 
 
 .content-area {
   /* background-color: lightgray; */
   /* padding-top: 100px; */
-  border-top: 60px solid #0C6738;
+  border-top: 90px solid #0C6738;
 }
 
 /* Article */
@@ -132,9 +132,14 @@ article {
 
 .eyebrow {
     background-color: #0C6738;
+    background-image: linear-gradient(rgba(255,255,255,.15), #0C6738);
     text-align: right;
     padding: 10px 20px;
     font-family: 'Noto Sans', sans-serif;;
+}
+.eyebrow-content {
+  max-width: 1460px;
+  margin: auto;
 }
 .eyebrow a {
   color: #fff;
@@ -183,8 +188,8 @@ article {
   flex: 0 0 auto;
 }
 .logo-img {
-  padding: 5px;
-  width: 145px;
+  padding: 9px 7px;
+  width: 185px;
 }
 h2.homeLogo {
   font-size: 1em;
@@ -256,7 +261,7 @@ li:hover > ul {
   background-color: #fff;
   width: 100%;
   left: 0;
-  top: 98px;
+  top: 120px;
   padding-top: 1em;
   z-index: 0;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -341,7 +346,7 @@ li:hover > ul {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 60vh;
+    min-height: 330px;
 		display: flex;
 		align-items: center;
     justify-content: center;
@@ -353,12 +358,13 @@ li:hover > ul {
 
 .hero-title {
   font-family: 'Noto Sans', sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   color: #fff;
   background-color: rgba(0,0,0,.4);
-  padding:30px;
+  padding: 30px;
   text-align: center;
   width: 90%;
+  max-width: 840px;
   line-height: 1.4;
 }
 
@@ -418,6 +424,7 @@ li:hover > ul {
     background-color: white;
     display: flex;
     align-items: center;
+    justify-content: center;
     box-shadow: 4px 5px 11px rgba(0,0,0,.4);
     z-index: 2;
 }
@@ -519,6 +526,9 @@ footer {
 }
 
 @media screen and (min-width: 570px) {
+  .logo-img {
+    width: 255px;
+  }
   .manu-logos {
       width: 90%;
       margin: auto;
@@ -560,6 +570,9 @@ footer {
   }
   .mobileNav {
     display: none;
+  }
+  .hero {
+    min-height: 650px;
   }
   .hero-title {
     font-size: 3em;
